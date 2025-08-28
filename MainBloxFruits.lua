@@ -2701,8 +2701,7 @@ local v48 = v16.Main:AddDropdown("DropdownSelectWeapon", {
     Values = {
         "Melee",
         "Sword",
-        "Gun",
-        "Blox Fruits"
+        "Blox Fruits",
     },
     Multi = false,
     Default = 1
@@ -2726,23 +2725,7 @@ task.spawn(function()
                 for v1028, v1029 in pairs(game.Players.LocalPlayer.Backpack:GetChildren()) do
                     if (v1029.ToolTip == "Sword") then
                         if game.Players.LocalPlayer.Backpack:FindFirstChild(tostring(v1029.Name)) then
-                            SelectWeapon = v1029.Name;
-                        end
-                    end
-                end
-            elseif (ChooseWeapon == "Gun") then
-                for v1430, v1431 in pairs(game.Players.LocalPlayer.Backpack:GetChildren()) do
-                    if (v1431.ToolTip == "Gun") then
-                        if game.Players.LocalPlayer.Backpack:FindFirstChild(tostring(v1431.Name)) then
-                            SelectWeapon = v1431.Name;
-                        end
-                    end
-                end
-            end
-        end);
-    end
-end);
-
+                            SelectWeapon = v1029.
 Name;
                         end
                     end
