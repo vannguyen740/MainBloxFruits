@@ -21,13 +21,13 @@ shared.LoaderKeyFrames = {
     }
 };
 local v2 = {
-    LoaderData = {
-        Name = shared.LoaderTitle or "A Loader",
-        Colors = shared.LoaderColors or {
-            Main = Color3.fromRGB(0, 0, 0),
-            Topic = Color3.fromRGB(200, 200, 200),
-            Title = Color3.fromRGB(255, 255, 255),
-            LoaderBackground = Color3.fromRGB(40, 40, 40),
+	LoaderData = {
+	    Name = shared.LoaderTitle or "A Loader",
+	    Colors = shared.LoaderColors or {
+	        Main = Color3.fromRGB(0, 0, 0),
+	        Topic = Color3.fromRGB(200, 200, 200),
+	        Title = Color3.fromRGB(255, 255, 255),
+	        LoaderBackground = Color3.fromRGB(40, 40, 40),
             LoaderSplash = Color3.fromRGB(3, 252, 3)
         }
     },
@@ -105,7 +105,7 @@ local v8 = CreateObject("TextLabel", {
     Name = "UserName",
     Parent = v6,
     BackgroundTransparency = 1,
-    Text = "Youtube: Menk Fanclub",
+    Text = "Youtube: Van Nguyen",
     Position = UDim2.new(0, 75, 0, 10),
     Size = UDim2.new(0, 200, 0, 50),
     Font = Enum.Font.GothamBold,
@@ -323,49 +323,49 @@ local v15 = v14:CreateWindow({
 });
 local v16 = {
     Home = v15:AddTab({
-        Title = "Information"
+        Title = "☄️ Information"
     }),
     Main = v15:AddTab({
-        Title = "Farming"
+        Title = "🔥 Farming"
     }),
     Sea = v15:AddTab({
-        Title = "Event"
+        Title = "🐸 Event"
     }),
     ITM = v15:AddTab({
-        Title = "Item"
+        Title = "📚 Item"
     }),
     Setting = v15:AddTab({
-        Title = "Setting"
+        Title = "⚙️ Setting"
     }),
     Status = v15:AddTab({
-        Title = "Server"
+        Title = "🤖 Server"
     }),
     Stats = v15:AddTab({
-        Title = "Index"
+        Title = "🗃️ Index"
     }),
     Player = v15:AddTab({
-        Title = "Start PvP"
+        Title = "⚔️ Start PvP"
     }),
     Teleport = v15:AddTab({
-        Title = "Move"
+        Title = "🗿 Move"
     }),
     Visual = v15:AddTab({
-        Title = "Fake"
+        Title = "💥 Fake"
     }),
     Fruit = v15:AddTab({
-        Title = "Fruits"
+        Title = "🫐 Fruits"
     }),
     Raid = v15:AddTab({
-        Title = "Raid Auto"
+        Title = "⚡ Raid Auto"
     }),
     Race = v15:AddTab({
-        Title = "Race"
+        Title = "💪 Race"
     }),
     Shop = v15:AddTab({
-        Title = "Shop"
+        Title = "💸 Shop"
     }),
     Misc = v15:AddTab({
-        Title = "Other"
+        Title = "🔄 Other"
     })
 };
 local v17 = v14.Options;
@@ -2678,7 +2678,7 @@ if game:GetService("ReplicatedStorage").Effect.Container:FindFirstChild("Respawn
 end
 v16.Home:AddButton({
     Title = "Discord",
-    Description = "Giao Lưu",
+    Description = "Exchange",
     Callback = function()
         setclipboard("https://discord.gg/nradqyeA");
     end
@@ -2689,7 +2689,7 @@ spawn(function()
         if _G.FastAttackStrix_Mode then
             pcall(function()
                 if (_G.FastAttackStrix_Mode == "Super Fast Attack") then
-                    _G.Fast_Delay = 0e-1;
+                    _G.Fast_Delay = 1e-100;
                 end
             end);
         end
